@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#1788d6"/>
+  <title>Fluid</title>
+  <meta name="description" content="Relive the nostalgic frutiger aero future we were promised."/>
+  <link rel="canonical" href="https://fluid.reb.gg/"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Fluid"/>
+  <meta property="og:title" content="Fluid"/>
+  <meta property="og:description" content="Relive the nostalgic frutiger aero future we were promised."/>
+  <meta property="og:url" content="https://fluid.reb.gg/"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:image" content="https://fluid.reb.gg/og-image.png"/>
+  <meta property="og:image:type" content="image/png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Ripples and shimmering light across a blue tiled pool."/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Fluid"/>
+  <meta name="twitter:description" content="Relive the nostalgic frutiger aero future we were promised."/>
+  <meta name="twitter:image" content="https://fluid.reb.gg/og-image.png"/>
+  <meta name="twitter:image:alt" content="Ripples and shimmering light across a blue tiled pool."/>
+</head>
+<body><main class="pool"><canvas id="fluid" tabindex="0" aria-label="Interactive pool. Drag anywhere to make ripples. Arrow keys tilt the water; Space makes a splash."></canvas><div id="loading" class="loading"><span class="loading-orb" aria-hidden="true">✦</span>Loading water…</div></main>
+<button id="settings-open" class="settings-button" aria-label="Settings" aria-haspopup="dialog" aria-expanded="false" aria-controls="settings" title="Water settings"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 3C13 9 7 14 7 20a9 9 0 0018 0C25 14 19 9 16 3Z" fill="url(#drop)" stroke="#fff" stroke-width="1.2"/><path d="M10 20c0 4 3 6 6 6" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/><defs><linearGradient id="drop" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#8bf7fd"/></linearGradient></defs></svg></button>
+<dialog id="settings" class="controls" aria-labelledby="settings-title">
+  <div class="panel-heading"><h2 id="settings-title">Settings</h2><button id="settings-close" class="icon-button" aria-label="Close settings" autofocus><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m3 3 10 10M13 3 3 13"/></svg></button></div>
+  <div class="window-body">
+<section class="control-section"><span class="section-label">Surface</span><div class="presets" role="group" aria-label="Surface material"><button data-material="0" aria-pressed="true">Transparent</button><button data-material="1" aria-pressed="false">Opaque</button><button data-material="2" aria-pressed="false">Metallic</button></div></section>
+<section class="control-section properties"><div class="range-control"><label for="splash-size">Splash size <output id="splash-size-value">1.0×</output></label><input id="splash-size" type="range" min="50" max="300" step="10" value="100" title="Size of click and drag disturbances"/><div class="range-captions"><span>Small</span><span>Large</span></div></div><div class="range-control"><label for="viscosity">Viscosity <output id="viscosity-value">22%</output></label><input id="viscosity" type="range" min="0" max="100" value="22"/><div class="range-captions"><span>Runny</span><span>Thick</span></div></div><div class="range-control"><label for="tension">Surface tension <output id="tension-value">55%</output></label><input id="tension" type="range" min="0" max="100" value="55"/><div class="range-captions"><span>Loose</span><span>Springy</span></div></div></section>
+<section class="control-section color-section"><div class="color-label"><label class="section-label">Water color</label><span id="color-name">Blue</span></div><div class="swatches" role="group" aria-label="Fluid color"><button class="swatch selected" data-color="#508acb" data-name="Blue" style="--swatch:#508acb" aria-label="Blue" aria-pressed="true"></button><button class="swatch" data-color="#299c91" data-name="Lagoon" style="--swatch:#299c91" aria-label="Lagoon" aria-pressed="false"></button><button class="swatch" data-color="#9b7cc3" data-name="Lavender" style="--swatch:#9b7cc3" aria-label="Lavender" aria-pressed="false"></button><button class="swatch" data-color="#d7848b" data-name="Rose" style="--swatch:#d7848b" aria-label="Rose" aria-pressed="false"></button><button class="swatch" data-color="#c66a2b" data-name="Amber" style="--swatch:#c66a2b" aria-label="Amber" aria-pressed="false"></button><button class="swatch" data-color="#c6ccd4" data-name="Silver" style="--swatch:#c6ccd4" aria-label="Silver" aria-pressed="false"></button><button class="swatch rainbow" data-color="rainbow" data-name="Rainbow" aria-label="Rainbow" aria-pressed="false"></button></div></section>
+  </div>
+  <div class="window-footer"><span id="engine-status" class="panel-footer">Preparing water…</span></div>
+</dialog><script type="module" src="/src/main.ts"></script></body></html>

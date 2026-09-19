@@ -1,0 +1,25 @@
+{
+  "name": "fluid",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5186 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check:shader": "vgpu check src/glass.wgsl --require-validation",
+    "test": "node --experimental-strip-types --test src/physics.test.ts",
+    "test:render": "node scripts/render.mjs",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "vgpu": "0.5.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@webgpu/types": "^0.1.64",
+    "pngjs": "^7.0.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}

@@ -1,0 +1,36 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Test output and generated inspection artifacts
+artifacts/
+test-results/
+playwright-report/
+blob-report/
+
+# Credentials and local deployment state
+.env
+.env.*
+!.env.example
+.vercel/
+*.pem
+*.key
+
+# Local agent tooling and editor state
+.agents/
+.claude/
+.codex/
+skills-lock.json
+.vscode/
+.idea/
+
+# Logs, caches, and OS files
+*.log
+.cache/
+.vite/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

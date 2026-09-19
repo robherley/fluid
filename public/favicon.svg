@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+  <defs>
+    <linearGradient id="orb" x2="0" y2="1">
+      <stop stop-color="#bfeaff"/><stop offset=".48" stop-color="#298fcf"/><stop offset=".51" stop-color="#04659a"/><stop offset="1" stop-color="#12b8e8"/>
+    </linearGradient>
+    <radialGradient id="green" cx=".5" cy="1.05" r=".55">
+      <stop stop-color="#c5ff34"/><stop offset=".4" stop-color="#55c94a"/><stop offset="1" stop-color="#55c94a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shine" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".91"/><stop offset="1" stop-color="#fff" stop-opacity=".02"/></linearGradient>
+    <linearGradient id="drop" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#8bf7fd"/></linearGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#004976"/></filter>
+  </defs>
+  <circle cx="24.5" cy="24.5" r="24" fill="url(#orb)" stroke="#a1edff"/>
+  <circle cx="24.5" cy="24.5" r="23.5" fill="url(#green)"/>
+  <circle cx="24.5" cy="24.5" r="22" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="2"/>
+  <ellipse cx="24.5" cy="14.5" rx="17.5" ry="11.5" fill="url(#shine)"/>
+  <g transform="translate(9.5 8.5) scale(.9375 1)" filter="url(#shadow)">
+    <path d="M16 3C13 9 7 14 7 20a9 9 0 0018 0C25 14 19 9 16 3Z" fill="url(#drop)" stroke="#fff" stroke-width="1.2"/>
+    <path d="M10 20c0 4 3 6 6 6" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+</svg>
